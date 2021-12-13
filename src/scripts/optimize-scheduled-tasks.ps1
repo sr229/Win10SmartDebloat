@@ -23,7 +23,7 @@ function Optimize-ScheduledTasks() {
         "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator"           # Recommended state for VDI use
         "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"         # Recommended state for VDI use
         "\Microsoft\Windows\Customer Experience Improvement Program\Uploader"
-        "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"                # Recommended state for VDI use
+        #"\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"                # Recommended state for VDI use, enabled because we'll want that open.
         "\Microsoft\Windows\Defrag\ScheduledDefrag"                                         # Recommended state for VDI use
         "\Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector"   
         "\Microsoft\Windows\Location\Notifications"                                         # Recommended state for VDI use

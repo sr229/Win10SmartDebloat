@@ -84,13 +84,13 @@ function Optimize-Security() {
     Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" -Name "EnableWebContentEvaluation" -Type DWord -Value 1
 
     Write-Warning "For more tweaks, edit the 'src/scripts/optimize-security.ps1' file, then uncomment '#code' code lines"
-    #Write-Host "[+][Security] Disabling Windows Script Host (execution of *.vbs scripts and alike)..."
-    #Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows Script Host\Settings" -Name "Enabled" -Type DWord -Value 0
+    Write-Host "[+][Security] Disabling Windows Script Host (execution of *.vbs scripts and alike)..."
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows Script Host\Settings" -Name "Enabled" -Type DWord -Value 0
 
     # Consumes more RAM - Make Windows Defender run in Sandbox Mode (MsMpEngCP.exe and MsMpEng.exe will run on background)
     # Details: https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/
-    #Write-Host "[+][Security] Enabling Windows Defender Sandbox mode..."
-    #setx /M MP_FORCE_USE_SANDBOX 1  # Restart the PC to apply the changes, 0 to Revert
+    Write-Host "[+][Security] Enabling Windows Defender Sandbox mode..."
+    setx /M MP_FORCE_USE_SANDBOX 1  # Restart the PC to apply the changes, 0 to Revert
 
 }
 

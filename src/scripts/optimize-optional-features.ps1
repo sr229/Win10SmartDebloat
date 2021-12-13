@@ -43,7 +43,7 @@ function Optimize-OptionalFeatures() {
         "NetFx4Extended-ASPNET45"           # NET Framework 4.x + ASPNET 4.x
         # WSL 2 Support Semi-Install
         "HypervisorPlatform"                # Hypervisor Platform from Windows
-        "Microsoft-Windows-Subsystem-Linux" # WSL (VT-d (Intel) or SVM (AMD) need to be enabled on BIOS)
+        #"Microsoft-Windows-Subsystem-Linux" # WSL (VT-d (Intel) or SVM (AMD) need to be enabled on BIOS), Superseded by the Store version.
         "VirtualMachinePlatform"            # VM Platform
     )
 
