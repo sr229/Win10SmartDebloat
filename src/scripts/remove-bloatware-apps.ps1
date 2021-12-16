@@ -114,6 +114,7 @@ function Remove-BloatwareApps() {
         #"Microsoft.MicrosoftStickyNotes"   # Sticky Notes
         #"Microsoft.WindowsCalculator"      # Calculator
         #"Microsoft.WindowsCamera"          # Camera
+        #"Microsoft.ScreenSketch"           # Snip and Sketch (now called Snipping tool, replaces the Win32 version in clean installs)
         #"Microsoft.WindowsFeedbackHub"     # Feedback Hub
         #"Microsoft.Windows.Photos"         # Photos
 
